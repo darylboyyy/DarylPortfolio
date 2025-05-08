@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - About</title>
+    <style>
+        :root {
+            --royal-blue: #4169E1;
+            --gold: #FFD700;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--royal-blue);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--gold);
+            font-weight: 300;
+        }
+        
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        .nav-tab {
+            padding: 15px 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-tab:hover {
+            color: var(--royal-blue);
+        }
+        
+        .nav-tab.active {
+            color: var(--royal-blue);
+        }
+        
+        .nav-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--gold);
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
+        .page-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .page-title {
+            color: var(--royal-blue);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--gold);
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--gold);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .about-image {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .skills {
+            margin-top: 30px;
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-tag {
+            background-color: var(--royal-blue);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background-color: var(--royal-blue);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .social-links {
+            margin-top: 15px;
+        }
+        
+        .social-link {
+            color: var(--gold);
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .social-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Hide all pages by default */
+        #resume-page, #certifications-page {
+            display: none;
+        }
+        
+        /* Show about page by default */
+        #about-page {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Daryl Paulo</h1>
+            <p class="subtitle">High School Senior</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="nav-tab active" id="about-tab">About</a>
+            <a href="resume.html" class="nav-tab" id="resume-tab">Resume</a>
+            <a href="certifications.html" class="nav-tab" id="certifications-tab">Certifications</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <div class="page-content" id="about-page">
+                <h2 class="page-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello, my name is Daryl Paulo. I'm currently a 12th grade student at Waipahu High School.</p>
+                        <br>
+                        <p>I'm proud to be a part of the Academy of Industrial Engineering Technology, where I'm learning valuable skills that will help me in my future career. I'm passionate about technology and how it shapes industries, and being in this academy has opened my eyes to the many opportunities available in enginering and innovation.</p>
+                    <div class="about-image">
+                        <img src="/api/placeholder/200/200" alt="Profile Photo" class="profile-image">
+                    </div>
+                </div>
+                
+                <div class="skills">
+                    <h3>Experience in the Tech Field</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Honolulu Tech Week - Competitor</span>
+                        <span class="skill-tag">Hawaii Annual Code Challenge - Competitor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // JavaScript is minimal since we're using separate HTML pages for Resume and Certifications
+        document.addEventListener('DOMContentLoaded', function() {
+            // Make the About tab show its content without page navigation
+            document.getElementById('about-tab').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

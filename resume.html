@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Resume</title>
+    <style>
+        :root {
+            --royal-blue: #4169E1;
+            --gold: #FFD700;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--royal-blue);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--gold);
+            font-weight: 300;
+        }
+        
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        .nav-tab {
+            padding: 15px 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-tab:hover {
+            color: var(--royal-blue);
+        }
+        
+        .nav-tab.active {
+            color: var(--royal-blue);
+        }
+        
+        .nav-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--gold);
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
+        .page-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .page-title {
+            color: var(--royal-blue);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--gold);
+        }
+        
+        .resume-section {
+            margin-bottom: 30px;
+        }
+        
+        .resume-section-title {
+            color: var(--royal-blue);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .resume-item {
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .resume-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--gold);
+            border-radius: 50%;
+        }
+        
+        .resume-item-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .resume-item-subtitle {
+            color: #666;
+            margin: 5px 0;
+        }
+        
+        .resume-item-date {
+            color: var(--royal-blue);
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        
+        .resume-item-description {
+            margin-top: 10px;
+        }
+        
+        .education-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .education-logo {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        
+        .education-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .download-resume {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: var(--royal-blue);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .download-resume:hover {
+            background-color: var(--gold);
+            color: #333;
+        }
+        
+        footer {
+            background-color: var(--royal-blue);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .social-links {
+            margin-top: 15px;
+        }
+        
+        .social-link {
+            color: var(--gold);
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .social-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Daryl Paulo</h1>
+            <p class="subtitle">High School Senior</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="nav-tab" id="about-tab">About</a>
+            <a href="#" class="nav-tab active" id="resume-tab">Resume</a>
+            <a href="certifications.html" class="nav-tab" id="certifications-tab">Certifications</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <div class="page-content">
+                <h2 class="page-title">Professional Resume</h2>
+                <img src="">
+        </div>
+    </main>
+    
+</body>
+</html>
